@@ -1,19 +1,3 @@
-//Floating bottom card
-
-const card = document.getElementById('floatingCard');
-
-card.addEventListener('click', () => {
-  // If user is selecting text, don't toggle
-  const selection = window.getSelection();
-  if (selection && selection.toString().length > 0) {
-    return;
-  }
-
-  card.classList.toggle('expanded');
-});
-
-
-
 // --- Live London UTC time ---
 const londonTimeEl = document.getElementById('londonTime');
 
@@ -29,3 +13,21 @@ function updateLondonTime() {
 
 updateLondonTime();
 setInterval(updateLondonTime, 1000);
+
+
+
+
+//Floating bottom card
+
+const card = document.getElementById('floatingCard');
+
+card.addEventListener('click', () => {
+  // If user is selecting text, don't toggle
+  const selection = window.getSelection();
+  if (selection && selection.toString().length > 0) {
+    return;
+  }
+
+  card.classList.toggle('expanded');
+});
+
