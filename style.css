@@ -171,9 +171,19 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border-bottom: 3px dashed #FF0AD2;
-}
 
+  /* ---- controls ---- */
+  --dash-length: 5px;   /* change this */
+  --line-thickness: 3px;
+
+  height: var(--line-thickness);
+
+  background-image: repeating-linear-gradient(
+    to right,
+    #FF0AD2 0 var(--dash-length),
+    transparent var(--dash-length) calc(var(--dash-length) * 2)
+  );
+}
 /* Body rows */
 .content-table tbody td {
   padding: 8px 12px;
