@@ -2,35 +2,53 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>prism v02</title>
+<title>The Department of Masculinity</title>
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="favicon/favicon.png" type="image/png">
 </head>
 
 <body>
 
-<!-- Logo -->
-<div class="logo-container">
-  <img src="logo/logo.png" alt="Logo" class="logo">
+
+<!-- Top bar -->
+<div class="top-bar">
+
+  <!-- Navigation (left) -->
+  <nav class="main-nav">
+    <a href="index.html" class="nav-item active">
+      <span>Writing</span>
+    </a>
+  
+    <a href="calender.html" class="nav-item">
+      <span>Shop</span>
+    </a>
+  
+    <a href="shop.html" class="nav-item">
+      <span>Calender</span>
+    </a>
+
+    <a href="mailto:kilian.hoeppner@gmail.com?subject=the%20suicidal%20ecstasy%20of%20being%20a%20woman" class="nav-item info-button">i</a>
+  </nav>
+
+  <!-- Logo (center) -->
+  <div class="logo-container">
+    <img src="logo/logo.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- Right-aligned slider + London time -->
+  <div class="top-bar-right">
+    <div class="font-slider-container">
+      <div class="font-slider-track">
+        <div class="font-slider-thumb"></div>
+      </div>
+    </div>
+
+    <div id="londonTime" class="london-time">London UTC 00:00:00</div>
+  </div>
+
 </div>
 
 
-    <nav class="main-nav">
-      <a href="index.html" class="nav-item active">
-        <span>Writing</span>
-      </a>
-    
-      <a href="calender.html" class="nav-item">
-        <span>Shop</span>
-      </a>
-    
-      <a href="shop.html" class="nav-item">
-        <span>Calender</span>
-      </a>
-    </nav>
-
-    <!-- London time display -->
-<div id="londonTime" class="london-time">London UTC 00:00:00</div>
 
 
 <!-- Content table -->
@@ -46,28 +64,28 @@
     </thead>
 
     <tbody>
-      <tr onclick="location.href='thegreatwhiteerection.html'">
+      <tr data-href='thegreatwhiteerection.html'>
         <td>Architecture</td>
         <td>The Great White Erection</td>
         <td>12 Jan 2026</td>
         <td>Container technologies that extend beyond the womb.</td>
       </tr>
 
-      <tr onclick="location.href='row2.html'">
+      <tr data-href='row2.html'>
         <td>Textiles</td>
         <td>Inside Out</td>
         <td>10 Jan 2026</td>
         <td>Intimacy at raves and our comfort in textiles.</td>
       </tr>
 
-      <tr onclick="location.href='row3.html'">
+      <tr data-href='row3.html'>
         <td>Identity</td>
         <td>Eve Plus Testosterone</td>
         <td>05 Jan 2026</td>
         <td>We’re all female and we hate it.</td>
       </tr>
 
-      <tr onclick="location.href='row4.html'">
+      <tr data-href='row4.html'>
         <td>Family</td>
         <td>Daddy Loves You</td>
         <td>01 Jan 2026</td>
@@ -77,13 +95,15 @@
   </table>
 </div>
 
-  <div class="floating-card" id="floatingCard">
-    <p style="font-family: Apple Chancery;">
-      © 2026. All rights reserved.
-    </p>
-  </div>
-  
-  <script src="script.js"></script>
-  </body>
+<div class="floating-card" id="floatingCard">
 
+  <p style="font-family: Apple Chancery;">
+    © 2026. All rights reserved.
+  </p>
+  
+  <img src="images/image1.png">
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>
